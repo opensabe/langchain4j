@@ -35,6 +35,8 @@ public class AiServiceContext {
 
     public Function<Object, Optional<String>> systemMessageProvider = DEFAULT_MESSAGE_PROVIDER;
 
+    public Function<String, String> messageTemplateCustomer = template -> template;
+
     public AiServiceContext(Class<?> aiServiceClass) {
         this.aiServiceClass = aiServiceClass;
     }

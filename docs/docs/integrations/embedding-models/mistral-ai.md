@@ -14,13 +14,13 @@ For Maven project `pom.xml`
 ```xml
 
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>com.github.opensabe</groupId>
     <artifactId>langchain4j</artifactId>
     <version>{your-version}</version> <!-- Specify your version here -->
 </dependency>
 
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>com.github.opensabe</groupId>
     <artifactId>langchain4j-mistral-ai</artifactId>
     <version>{your-version}</version>
 </dependency>

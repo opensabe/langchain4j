@@ -40,9 +40,9 @@ adjusting and customizing more and more aspects.
 1. Import the `langchain4j-easy-rag` dependency:
 ```xml
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>com.github.opensabe</groupId>
     <artifactId>langchain4j-easy-rag</artifactId>
-    <version>0.30.0</version>
+    <version>0.30.0-SNAPSHOT</version>
 </dependency>
 ```
 

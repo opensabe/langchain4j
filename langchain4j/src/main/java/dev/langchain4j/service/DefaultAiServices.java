@@ -192,6 +192,7 @@ class DefaultAiServices<T> extends AiServices<T> {
 
     private Optional<SystemMessage> prepareSystemMessage(Object memoryId, Method method, Object[] args) {
         return findSystemMessageTemplate(memoryId, method)
+                .map(context.messageTemplateCustomer)
                 .map(systemMessageTemplate -> PromptTemplate.from(systemMessageTemplate)
                         .apply(findTemplateVariables(systemMessageTemplate, method, args))
                         .toSystemMessage());
@@ -252,9 +253,9 @@ class DefaultAiServices<T> extends AiServices<T> {
         return annotation != null && "it".equals(annotation.value());
     }
 
-    private static UserMessage prepareUserMessage(Method method, Object[] args) {
+    private UserMessage prepareUserMessage(Method method, Object[] args) {
 
-        String template = getUserMessageTemplate(method, args);
+        String template = context.messageTemplateCustomer.apply(getUserMessageTemplate(method, args));
         Map<String, Object> variables = findTemplateVariables(template, method, args);
 
         Prompt prompt = PromptTemplate.from(template).apply(variables);

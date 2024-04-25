@@ -246,6 +246,11 @@ public abstract class AiServices<T> {
         return this;
     }
 
+    public AiServices<T> templateCustomer (Function<String, String> messageTemplateCustomer) {
+        context.messageTemplateCustomer.andThen(messageTemplateCustomer);
+        return this;
+    }
+
     /**
      * Configures the chat memory provider, which provides a dedicated instance of {@link ChatMemory} for each user/conversation.
      * To distinguish between users/conversations, one of the method's arguments should be a memory ID (of any data type)

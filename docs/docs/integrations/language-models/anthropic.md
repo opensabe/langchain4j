@@ -11,9 +11,9 @@ sidebar_position: 2
 
 ```xml
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>com.github.opensabe</groupId>
     <artifactId>langchain4j-anthropic</artifactId>
-    <version>0.30.0</version>
+    <version>0.30.0-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -88,9 +88,9 @@ TODO
 Import Spring Boot starter for Anthropic:
 ```xml
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>com.github.opensabe</groupId>
     <artifactId>langchain4j-anthropic-spring-boot-starter</artifactId>
-    <version>0.30.0</version>
+    <version>0.30.0-SNAPSHOT</version>
 </dependency>
 ```
 

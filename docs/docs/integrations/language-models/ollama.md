@@ -34,7 +34,7 @@ To get started, add the following dependencies to your project's `pom.xml`:
 ```xml
 
 <dependency>
-  <groupId>dev.langchain4j</groupId>
+  <groupId>com.github.opensabe</groupId>
   <artifactId>langchain4j-ollama</artifactId>
   <version>${lanchain4j-ollama.version}</version>
 </dependency>
