@@ -247,7 +247,7 @@ public abstract class AiServices<T> {
     }
 
     public AiServices<T> templateCustomer (Function<String, String> messageTemplateCustomer) {
-        context.messageTemplateCustomer.andThen(messageTemplateCustomer);
+        context.messageTemplateCustomer = context.messageTemplateCustomer.andThen(messageTemplateCustomer);
         return this;
     }
 
