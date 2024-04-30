@@ -1,6 +1,7 @@
 package dev.langchain4j.model.input.structured;
 
 import dev.langchain4j.model.input.Prompt;
+import dev.langchain4j.model.input.PromptTemplateCustomizer;
 import dev.langchain4j.spi.prompt.structured.StructuredPromptFactory;
 
 import static dev.langchain4j.spi.ServiceHelper.loadFactories;
@@ -13,13 +14,23 @@ public class StructuredPromptProcessor {
     private StructuredPromptProcessor() {
     }
 
+    private static final PromptTemplateCustomizer CUSTOMIZER = templateCustomizer();
+
     private static final StructuredPromptFactory FACTORY = factory();
+
 
     private static StructuredPromptFactory factory() {
         for (StructuredPromptFactory factory : loadFactories(StructuredPromptFactory.class)) {
             return factory;
         }
-        return new DefaultStructuredPromptFactory();
+        return new DefaultStructuredPromptFactory(CUSTOMIZER);
+    }
+
+    private static PromptTemplateCustomizer templateCustomizer() {
+        for (PromptTemplateCustomizer customizer : loadFactories(PromptTemplateCustomizer.class)) {
+            return customizer;
+        }
+        return template -> template;
     }
 
     /**

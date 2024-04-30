@@ -4,6 +4,9 @@ import dev.langchain4j.model.input.Prompt;
 import org.assertj.core.api.WithAssertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @SuppressWarnings("unused")
 class DefaultStructuredPromptFactoryTest implements WithAssertions {
     @StructuredPrompt("Hello, my name is {{name}}")
@@ -21,6 +24,31 @@ class DefaultStructuredPromptFactoryTest implements WithAssertions {
 
         public BrokenPrompt(String name) {
             this.name = name;
+        }
+    }
+    @StructuredPrompt("${placeholder}")
+    static class PlaceholderPrompt {
+
+        public final String name;
+
+        public PlaceholderPrompt(String name) {
+            this.name = name;
+        }
+    }
+
+    static class SimpleEnvironment {
+
+        private final Map<String,String> map;
+
+        SimpleEnvironment(Map<String, String> map) {
+            this.map = map;
+        }
+
+        String resolverPlaceholders (String text) {
+            for (Map.Entry<String,String> entry: map.entrySet()) {
+                text = text.replaceFirst("\\$\\{"+entry.getKey()+"\\}", entry.getValue());
+            }
+            return text;
         }
     }
 
@@ -53,5 +81,15 @@ class DefaultStructuredPromptFactoryTest implements WithAssertions {
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> factory.toPrompt(new BrokenPrompt("Klaus")))
                 .withMessage("Value for the variable 'broken' is missing");
+    }
+
+    @Test
+    public void test_placeholder_prompt() {
+        Map<String,String> variables = new HashMap<>();
+        variables.put("placeholder", "Hello, my name is {{name}}");
+        SimpleEnvironment environment = new SimpleEnvironment(variables);
+        DefaultStructuredPromptFactory factory = new DefaultStructuredPromptFactory(environment::resolverPlaceholders);
+        Prompt prompt = factory.toPrompt(new PlaceholderPrompt("Klaus"));
+        assertThat(prompt.text()).isEqualTo("Hello, my name is Klaus");
     }
 }

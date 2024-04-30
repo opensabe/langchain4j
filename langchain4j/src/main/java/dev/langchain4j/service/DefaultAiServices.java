@@ -216,7 +216,7 @@ class DefaultAiServices<T> extends AiServices<T> {
             if (annotation != null) {
                 String variableName = annotation.value();
                 Object variableValue = args[i];
-                variables.put(variableName, variableValue);
+                variables.put(variableName, toString(variableValue));
             }
         }
 

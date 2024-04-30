@@ -6,7 +6,9 @@ import com.google.gson.ToNumberPolicy;
 import com.google.gson.reflect.TypeToken;
 import dev.langchain4j.model.input.Prompt;
 import dev.langchain4j.model.input.PromptTemplate;
+import dev.langchain4j.model.input.PromptTemplateCustomizer;
 import dev.langchain4j.spi.prompt.structured.StructuredPromptFactory;
+
 import java.util.Map;
 
 /**
@@ -15,16 +17,23 @@ import java.util.Map;
 public class DefaultStructuredPromptFactory implements StructuredPromptFactory {
     private static final Gson GSON = new GsonBuilder().setObjectToNumberStrategy(ToNumberPolicy.LONG_OR_DOUBLE).create();
 
+    private final PromptTemplateCustomizer customizer;
+
     /**
      * Create a default structured prompt factory.
      */
-    public DefaultStructuredPromptFactory() {}
+    public DefaultStructuredPromptFactory(PromptTemplateCustomizer customizer) {
+        this.customizer = customizer;
+    }
+    public DefaultStructuredPromptFactory() {
+        this(template -> template);
+    }
 
     @Override
     public Prompt toPrompt(Object structuredPrompt) {
         StructuredPrompt annotation = StructuredPrompt.Util.validateStructuredPrompt(structuredPrompt);
 
-        String promptTemplateString = StructuredPrompt.Util.join(annotation);
+        String promptTemplateString = customizer.customer(StructuredPrompt.Util.join(annotation));
         PromptTemplate promptTemplate = PromptTemplate.from(promptTemplateString);
 
         Map<String, Object> variables = extractVariables(structuredPrompt);
