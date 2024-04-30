@@ -4,4 +4,8 @@ package dev.langchain4j.model.input;
 public interface PromptTemplateCustomizer {
 
     String customer (String template);
+
+    default PromptTemplateCustomizer andThen (PromptTemplateCustomizer after) {
+        return template -> after.customer(customer(template));
+    }
 }
