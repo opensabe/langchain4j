@@ -22,7 +22,7 @@ In this case, we should add the OpenAI dependency:
 - For Maven in `pom.xml`:
 ```xml
 <dependency>
-    <groupId>com.github.opensabe</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-open-ai</artifactId>
     <version>0.30.0-SNAPSHOT</version>
 </dependency>

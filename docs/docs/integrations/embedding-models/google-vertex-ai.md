@@ -15,7 +15,7 @@ Add the following dependencies to your project's `pom.xml`:
 
 ```xml
 <dependency>
-  <groupId>com.github.opensabe</groupId>
+  <groupId>io.github.opensabe-tech</groupId>
   <artifactId>langchain4j-vertex-ai</artifactId>
   <version>{your-version}</version> <!-- Specify langchain4j version here -->
 </dependency>

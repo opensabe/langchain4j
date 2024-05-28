@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.github.opensabe</groupId>
+        <groupId>io.github.opensabe-tech</groupId>
         <artifactId>langchain4j-parent</artifactId>
         <version>0.30.0-SNAPSHOT</version>
         <relativePath>../../langchain4j-parent/pom.xml</relativePath>
@@ -17,7 +17,7 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.github.opensabe</groupId>
+            <groupId>io.github.opensabe-tech</groupId>
             <artifactId>langchain4j-core</artifactId>
         </dependency>
 
@@ -27,7 +27,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.opensabe</groupId>
+            <groupId>io.github.opensabe-tech</groupId>
             <artifactId>langchain4j</artifactId>
             <scope>test</scope>
         </dependency>

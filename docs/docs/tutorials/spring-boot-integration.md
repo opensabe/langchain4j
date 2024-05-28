@@ -12,7 +12,7 @@ To use one of the Spring Boot starters, first import the corresponding dependenc
 
 ```xml
 <dependency>
-    <groupId>com.github.opensabe</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-open-ai-spring-boot-starter</artifactId>
     <version>0.30.0-SNAPSHOT</version>
 </dependency>
@@ -46,7 +46,7 @@ Assuming you have already imported one of the integrations starters (see above),
 import `langchain4j-spring-boot-starter`:
 ```xml
 <dependency>
-    <groupId>com.github.opensabe</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-spring-boot-starter</artifactId>
     <version>0.30.0-SNAPSHOT</version>
 </dependency>

@@ -14,7 +14,7 @@ sidebar_position: 12
 ```xml
 
 <dependency>
-    <groupId>com.github.opensabe</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-open-ai</artifactId>
     <version>0.30.0-SNAPSHOT</version>
 </dependency>

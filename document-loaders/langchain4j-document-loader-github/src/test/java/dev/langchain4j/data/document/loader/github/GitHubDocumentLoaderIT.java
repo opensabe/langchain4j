@@ -35,7 +35,7 @@ class GitHubDocumentLoaderIT {
     public void should_load_file() {
         Document document = loader.loadDocument(TEST_OWNER, TEST_REPO, "main", "pom.xml", parser);
 
-        assertThat(document.text()).contains("<groupId>com.github.opensabe</groupId>");
+        assertThat(document.text()).contains("<groupId>io.github.opensabe-tech</groupId>");
         assertThat(document.metadata().asMap()).hasSize(9);
         assertThat(document.metadata("github_git_url")).startsWith("https://api.github.com/repos/langchain4j/langchain4j");
     }

@@ -147,7 +147,7 @@ See example [here](https://github.com/langchain4j/langchain4j-examples/blob/main
     - Maven:
       ```xml
       <dependency>
-          <groupId>com.github.opensabe</groupId>
+          <groupId>io.github.opensabe-tech</groupId>
           <artifactId>langchain4j-open-ai</artifactId>
           <version>0.30.0-SNAPSHOT</version>
       </dependency>
