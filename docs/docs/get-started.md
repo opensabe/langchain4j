@@ -24,7 +24,7 @@ In this case, we should add the OpenAI dependency:
 <dependency>
     <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-open-ai</artifactId>
-    <version>0.30.0-SNAPSHOT</version>
+    <version>0.30.0</version>
 </dependency>
 ```
 

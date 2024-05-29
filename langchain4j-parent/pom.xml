@@ -6,7 +6,7 @@
 
     <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-parent</artifactId>
-    <version>0.30.0-SNAPSHOT</version>
+    <version>0.30.0</version>
     <packaging>pom</packaging>
 
     <name>LangChain4j :: Parent POM</name>
@@ -398,17 +398,17 @@
                 <version>3.1.2</version>
             </plugin>
 
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.13</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.sonatype.plugins</groupId>-->
+<!--                <artifactId>nexus-staging-maven-plugin</artifactId>-->
+<!--                <version>1.6.13</version>-->
+<!--                <extensions>true</extensions>-->
+<!--                <configuration>-->
+<!--                    <serverId>ossrh</serverId>-->
+<!--                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>-->
+<!--                    <autoReleaseAfterClose>false</autoReleaseAfterClose>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -451,6 +451,33 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- 使用GPG加密 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>ossrh</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- 使用 Maven 插件发布 -->
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.4.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                    <tokenAuth>true</tokenAuth>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -482,32 +509,32 @@
         <developerConnection>scm:git:git@github.com:langchain4j/langchain4j.git</developerConnection>
     </scm>
 
-    <distributionManagement>
+<!--    <distributionManagement>-->
 <!--        <snapshotRepository>-->
 <!--            <id>sabegeek</id>-->
 <!--            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>-->
 <!--        </snapshotRepository>-->
-        <snapshotRepository>
-            <id>matchplay-snapshots</id>
-            <name>Team Nexus Repository snapshots</name>
-            <url>https://maven.matchplay.com/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+<!--        <snapshotRepository>-->
+<!--            <id>matchplay-snapshots</id>-->
+<!--            <name>Team Nexus Repository snapshots</name>-->
+<!--            <url>https://maven.matchplay.com/repository/maven-snapshots/</url>-->
+<!--        </snapshotRepository>-->
+<!--    </distributionManagement>-->
 
-    <repositories>
-        <repository>
+<!--    <repositories>-->
+<!--        <repository>-->
 <!--            <id>snapshot-repo</id>-->
 <!--            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>-->
 <!--            <snapshots>-->
 <!--                <enabled>true</enabled>-->
 <!--            </snapshots>-->
-            <id>snapshot-repo</id>
-            <url>https://maven.matchplay.com/repository/maven-snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+<!--            <id>snapshot-repo</id>-->
+<!--            <url>https://maven.matchplay.com/repository/maven-snapshots/</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
+<!--    </repositories>-->
 
     <profiles>
         <profile>

@@ -42,7 +42,7 @@ adjusting and customizing more and more aspects.
 <dependency>
     <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-easy-rag</artifactId>
-    <version>0.30.0-SNAPSHOT</version>
+    <version>0.30.0</version>
 </dependency>
 ```
 

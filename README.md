@@ -149,7 +149,7 @@ See example [here](https://github.com/langchain4j/langchain4j-examples/blob/main
       <dependency>
           <groupId>io.github.opensabe-tech</groupId>
           <artifactId>langchain4j-open-ai</artifactId>
-          <version>0.30.0-SNAPSHOT</version>
+          <version>0.30.0</version>
       </dependency>
       ```
     - Gradle:
