@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.github.opensabe-tech</groupId>
         <artifactId>langchain4j-parent</artifactId>
-        <version>0.30.0</version>
+        <version>0.32.0-SNAPSHOT</version>
         <relativePath>../langchain4j-parent/pom.xml</relativePath>
     </parent>
 
@@ -47,6 +47,12 @@
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-anthropic</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-azure-open-ai</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -59,13 +65,31 @@
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-bedrock</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-local-ai</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-chatglm</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-vertex-ai</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-cohere</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -83,7 +107,25 @@
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-dashscope</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-hugging-face</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-qianfan</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-jina</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -95,19 +137,13 @@
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-local-ai</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-ollama</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
-                <artifactId>langchain4j-bedrock</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
-                <artifactId>langchain4j-chatglm</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -119,7 +155,7 @@
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
-                <artifactId>langchain4j-cohere</artifactId>
+                <artifactId>langchain4j-bedrock</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -131,11 +167,83 @@
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-chatglm</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-ollama</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-mistral-ai</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-open-ai</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-cohere</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-qianfan</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-nomic</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-vertex-ai</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-anthropic</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-vertex-ai-gemini</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-zhipu-ai</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!-- embedding stores -->
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-azure-ai-search</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-azure-cosmos-mongo-vcore</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
@@ -175,7 +283,19 @@
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-mongodb-atlas</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-pgvector</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-neo4j</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -187,7 +307,19 @@
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-opensearch</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-qdrant</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-pgvector</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -199,7 +331,25 @@
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-pinecone</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-vespa</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-qdrant</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-weaviate</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -223,7 +373,31 @@
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-vearch</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-vespa</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-mongodb-atlas</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-weaviate</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-azure-cosmos-nosql</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -236,55 +410,73 @@
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-all-minilm-l6-v2-q</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-en</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-en-q</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-v15-en</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-embeddings-bge-small-en-v15</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-en-v15-q</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-zh</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-zh-q</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-embeddings-bge-small-zh-v15</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-embeddings-bge-small-zh-v15-q</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-e5-small-v2</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-e5-small-v2-q</artifactId>
                 <version>0.30.0</version>
             </dependency>
@@ -294,6 +486,12 @@
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-code-execution-engine-graalvm-polyglot</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-code-execution-engine-judge0</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -313,6 +511,18 @@
 
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-document-loader-amazon-s3</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-document-loader-azure-storage-blob</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-document-loader-github</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -320,6 +530,18 @@
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-document-loader-azure-storage-blob</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-document-loader-selenium</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-document-loader-tencent-cos</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -348,6 +570,20 @@
             <dependency>
                 <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embedding-store-filter-parser-sql</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- web searchers -->
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-web-search-engine-google-custom</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- experimental -->
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-experimental-sql</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
