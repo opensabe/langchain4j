@@ -56,7 +56,7 @@
         </dependency>
 
         <dependency>
-            <groupId>dev.langchain4j</groupId>
+            <groupId>io.github.opensabe-tech</groupId>
             <artifactId>langchain4j-core</artifactId>
             <classifier>tests</classifier>
             <type>test-jar</type>

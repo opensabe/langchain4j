@@ -32,7 +32,7 @@ the base library:
 
 ```xml
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j</artifactId>
     <version>0.31.0</version>
 </dependency>

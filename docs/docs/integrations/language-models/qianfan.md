@@ -9,12 +9,12 @@ sidebar_position: 13
 
 ```xml
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j</artifactId>
     <version>{{version}}</version>
 </dependency>
 <dependency>
-  <groupId>dev.langchain4j</groupId>
+  <groupId>io.github.opensabe-tech</groupId>
   <artifactId>langchain4j-qianfan</artifactId>
   <version>{{version}}</version>
 </dependency>
@@ -243,7 +243,7 @@ LangChain4j has an "Easy RAG" feature that makes it as easy as possible to get s
 - Import the dependency:langchain4j-easy-rag
 ```xml
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-easy-rag</artifactId>
     <version>{{version}}</version>
 </dependency>
