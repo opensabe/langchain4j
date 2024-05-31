@@ -30,9 +30,9 @@
         </dependency>
 
         <dependency>
-            <groupId>dev.langchain4j</groupId>
+            <groupId>io.github.opensabe-tech</groupId>
             <artifactId>langchain4j-embeddings-bge-small-en-v15-q</artifactId>
-            <version>0.30.0</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>

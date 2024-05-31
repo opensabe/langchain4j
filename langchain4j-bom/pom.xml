@@ -404,81 +404,82 @@
             <!-- embeddings -->
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-all-minilm-l6-v2</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-all-minilm-l6-v2-q</artifactId>
-                <version>0.30.0</version>
+                <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-en</artifactId>
-                <version>0.30.0</version>
+                <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-en-q</artifactId>
-                <version>0.30.0</version>
+                <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
-                <artifactId>langchain4j-embeddings-bge-small-v15-en</artifactId>
-                <version>0.30.0</version>
-            </dependency>
-
-            <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
+<!--                <artifactId>langchain4j-embeddings-bge-small-v15-en</artifactId>-->
                 <artifactId>langchain4j-embeddings-bge-small-en-v15</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
+                <artifactId>langchain4j-embeddings-bge-small-en-v15</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-en-v15-q</artifactId>
-                <version>0.30.0</version>
+                <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-zh</artifactId>
-                <version>0.30.0</version>
+                <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-zh-q</artifactId>
-                <version>0.30.0</version>
+                <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-zh-v15</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-zh-v15-q</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-e5-small-v2</artifactId>
-                <version>0.30.0</version>
+                <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>dev.langchain4j</groupId>
+                <groupId>io.github.opensabe-tech</groupId>
                 <artifactId>langchain4j-embeddings-e5-small-v2-q</artifactId>
-                <version>0.30.0</version>
+                <version>${project.version}</version>
             </dependency>
 
             <!-- code execution engines -->
