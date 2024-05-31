@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.github.opensabe-tech</groupId>
         <artifactId>langchain4j-parent</artifactId>
-        <version>0.32.0-SNAPSHOT</version>
+        <version>0.32.0.1</version>
         <relativePath>../langchain4j-parent/pom.xml</relativePath>
     </parent>
 
@@ -404,79 +404,79 @@
             <!-- embeddings -->
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-all-minilm-l6-v2</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-all-minilm-l6-v2-q</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-en</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-en-q</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-v15-en</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-en-v15</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-en-v15-q</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-zh</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-zh-q</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-zh-v15</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-bge-small-zh-v15-q</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-e5-small-v2</artifactId>
                 <version>0.30.0</version>
             </dependency>
 
             <dependency>
-                <groupId>io.github.opensabe-tech</groupId>
+                <groupId>dev.langchain4j</groupId>
                 <artifactId>langchain4j-embeddings-e5-small-v2-q</artifactId>
                 <version>0.30.0</version>
             </dependency>
