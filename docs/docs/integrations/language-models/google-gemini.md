@@ -68,7 +68,7 @@ To get started, add the following dependencies to your project's `pom.xml`:
 <dependency>
   <groupId>io.github.opensabe-tech</groupId>
   <artifactId>langchain4j-vertex-ai-gemini</artifactId>
-  <version>0.31.0</version>
+  <version>0.31.0.1</version>
 </dependency>
 ```
 

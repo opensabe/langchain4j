@@ -20,7 +20,7 @@ It looks beyond the surface-level matching of terms to consider the deeper inter
 <dependency>
     <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-jina</artifactId>
-    <version>0.31.0</version>
+    <version>0.31.0.1</version>
 </dependency>
 ```
 

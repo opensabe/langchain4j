@@ -96,7 +96,7 @@ adjusting and customizing more and more aspects.
 <dependency>
     <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-easy-rag</artifactId>
-    <version>0.31.0</version>
+    <version>0.31.0.1</version>
 </dependency>
 ```
 

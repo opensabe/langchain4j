@@ -7,8 +7,8 @@ sidebar_position: 3
 `ApachePoiDocumentParser` can be found in the following module:
 ```xml
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-document-parser-apache-poi</artifactId>
-    <version>0.31.0</version>
+    <version>0.31.0.1</version>
 </dependency>
 ```

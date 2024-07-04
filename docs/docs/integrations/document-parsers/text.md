@@ -7,8 +7,8 @@ sidebar_position: 1
 `TextDocumentParser` can be found in the main module:
 ```xml
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j</artifactId>
-    <version>0.31.0</version>
+    <version>0.31.0.1</version>
 </dependency>
 ```

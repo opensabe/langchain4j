@@ -16,13 +16,13 @@ For Maven project `pom.xml`
 <dependency>
     <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j</artifactId>
-    <version>0.31.0</version>
+    <version>0.31.0.1</version>
 </dependency>
 
 <dependency>
     <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-mistral-ai</artifactId>
-    <version>0.31.0</version>
+    <version>0.31.0.1</version>
 </dependency>
 ```
 

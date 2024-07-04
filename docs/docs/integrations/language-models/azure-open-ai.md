@@ -18,18 +18,18 @@ If you are using Quarkus, please refer to the
 ### Plain Java
 ```xml
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-azure-open-ai</artifactId>
-    <version>0.31.0</version>
+    <version>0.31.0.1</version>
 </dependency>
 ```
 
 ### Spring Boot
 ```xml
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-azure-open-ai-spring-boot-starter</artifactId>
-    <version>0.31.0</version>
+    <version>0.31.0.1</version>
 </dependency>
 ```
 

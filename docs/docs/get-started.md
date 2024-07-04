@@ -19,7 +19,7 @@ The simplest way to begin is with the OpenAI integration:
 <dependency>
     <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-open-ai</artifactId>
-    <version>0.31.0</version>
+    <version>0.31.0.1</version>
 </dependency>
 ```
 
@@ -30,7 +30,7 @@ the following dependency:
 <dependency>
     <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j</artifactId>
-    <version>0.31.0</version>
+    <version>0.31.0.1</version>
 </dependency>
 ```
 

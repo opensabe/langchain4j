@@ -8,9 +8,9 @@ sidebar_position: 4
 
 ```xml
 <dependency>
-    <groupId>dev.langchain4j</groupId>
+    <groupId>io.github.opensabe-tech</groupId>
     <artifactId>langchain4j-azure-cosmos-mongo-vcore</artifactId>
-    <version>0.31.0</version>
+    <version>0.31.0.1</version>
 </dependency>
 ```
 
