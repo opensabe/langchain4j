@@ -1,5 +1,5 @@
 ---
-sidebar_position: 13
+sidebar_position: 14
 ---
 
 # Qianfan
@@ -13,12 +13,12 @@ sidebar_position: 13
     <artifactId>langchain4j</artifactId>
     <version>{{version}}</version>
 </dependency>
+
 <dependency>
   <groupId>io.github.opensabe-tech</groupId>
   <artifactId>langchain4j-qianfan</artifactId>
   <version>{{version}}</version>
 </dependency>
-
 ```
 
 
