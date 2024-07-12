@@ -18,7 +18,6 @@
 
     <properties>
         <testcontainers.version>1.19.0</testcontainers.version>
-        <maven.compiler.release>17</maven.compiler.release>
     </properties>
 
 
